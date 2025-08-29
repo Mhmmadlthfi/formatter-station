@@ -1,0 +1,33 @@
+Cara menjalankan untuk file PHP:
+npm run format:php
+
+Cara menjalankan untuk file SQL:
+npm run format:sql
+
+Cara menjalankan untuk file JS:
+npm run format:js
+
+Cara menjalankan untuk file HTML:
+npm run format:html
+
+Cara menjalankan untuk file JSON:
+npm run format:json
+
+Cara menjalankan untuk semua jenis file:
+npm run format:all
+
+
+=============================================
+
+
+Jika ingin lebih fleksibel maka ubah 
+pengaturan script 'format' di file package.json:
+
+"scripts": {
+  "format": "prettier --write"
+}
+
+nanti bisa dijalankan dengan cara:
+   npm run format -- index.php
+   npm run format -- myfile.php
+

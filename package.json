@@ -1,0 +1,22 @@
+{
+   "name": "formatter-station",
+   "version": "1.0.0",
+   "main": "index.js",
+   "scripts": {
+  "format:php": "prettier --write formatter-code/index.php",
+  "format:js": "prettier --write formatter-code/script.js",
+  "format:html": "prettier --write formatter-code/template.html",
+  "format:sql": "prettier --write formatter-code/query.sql",
+  "format:json": "prettier --write formatter-code/config.json",
+  "format:all": "prettier --write \"formatter-code/*.{php,js,html,sql,json}\""
+},
+   "keywords": [],
+   "author": "Muhammad Lutfi Wahid",
+   "license": "ISC",
+   "description": "",
+   "devDependencies": {
+      "@prettier/plugin-php": "^0.24.0",
+      "prettier": "^3.6.2",
+      "prettier-plugin-sql": "^0.19.2"
+   }
+}
